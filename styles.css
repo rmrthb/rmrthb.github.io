@@ -5,3 +5,17 @@ img{
 p{
   display: inline-block;
 }
+
+header{
+  font-size: 80px;
+  font-family: monospace;
+  text-align: center;
+  padding: 100px 0px 80px 0px;
+
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: monospace;
+}
