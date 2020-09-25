@@ -1,21 +1,54 @@
-img{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #CCC;
+}
+
+.container {
+  background-color: #FFF;
+}
+
+img {
   height: 200px;
 }
 
-p{
+p {
   display: inline-block;
 }
+.navbar-nav > li {
 
-header{
+	padding: 0;
+	margin: 0 0 0 1px;
+}
+header {
+  background-color: #F2F2F2;
   font-size: 80px;
   font-family: monospace;
   text-align: center;
-  padding: 100px 0px 80px 0px;
-
 }
 
-h1{
+h1 {
   font-size: 50px;
   text-align: center;
   font-family: monospace;
+}
+
+.topbot-padding {
+  padding: 300px 0px 300px 0px;
+}
+
+
+
+#about {
+  background-color: #D0D6B3;
+}
+
+#projects {
+  background-color: #548687;
+}
+
+#contact {
+  background-color: #2A2E45;
 }
