@@ -36,10 +36,19 @@ h1 {
 }
 
 .topbot-padding {
-  padding: 300px 0px 300px 0px;
+  padding: 350px 0px 350px 0px;
 }
 
+footer{
+  color: white;
+  background-color: #2A2E45;
+  padding: 20px;
+  text-align: center;
+}
 
+#menuBtn {
+  float: right;
+}
 
 #about {
   background-color: #D0D6B3;
