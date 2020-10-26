@@ -56,17 +56,17 @@
           <span class="typewrite anim-typewrite"></span>
         </p>
       </div> -->
-      <div class="row">
-      <div class="col">
-        <img src="media/ellipse.svg" />
-      </div>
-      <div class="col">
-        <h1 class="animate__animated animate__fadeInDown" id="welcome">hi, i'm</h1>
-        <p class="content" id="myname">
-          <span class="typewrite anim-typewrite"></span>
-        </p>
-      </div>
-    </div>
+<div class="container">
+  <img src="media/ellipse.svg" id="ellipse"/>
+  <div class="centered">
+    <h1 class="animate__animated animate__fadeInDown" id="welcome">hi, i'm</h1>
+    <p class="content" id="myname">
+      <span class="typewrite anim-typewrite" id="typewrite"></span>
+    </p>
+  </div>
+</div>
+
+
 
   </header>
   <!-- HOME SECTION-->
@@ -74,8 +74,6 @@
   <!-- ABOUT SECTION-->
   <section class="topbot-padding" id="about">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row">
-        <div class="col">
           <h1 data-aos="fade-right">
             about
           </h1>
@@ -83,8 +81,6 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum vestibulum commodo. Nunc dui lacus, efficitur eget ornare nec, facilisis nec velit. Vivamus vel metus tempus, aliquet ipsum eget, rhoncus dui. Nam semper diam
             eget turpis convallis, vitae suscipit nulla dignissim.
           </p>
-        </div>
-      </div>
     </div>
   </section>
   <!-- ABOUT SECTION-->
@@ -92,89 +88,79 @@
   <!-- PROJECTS SECTION-->
   <section class="topbot-padding" id="projects">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row">
-        <div class="col">
+
           <h1 data-aos="fade-right">
             projects
           </h1>
-        </div>
-      </div>
 
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="content">
-            <a href="https://github.com/rmrthb/rmrthb.github.io" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="media/image.jpg">
-              <div class="content-details fadeIn-top">
-                <h3>rmrth.se</h3>
-                <p>Projekt avsedd för att lära mig grundläggande webbprogrammering.</p>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-website.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">rmrth.se</h3>
+                  <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat fermentum malesuada. Vivamus mauris eros, cursus at facilisis sit amet, molestie vel neque. Curabitur turpis ante, venenatis id metus vel, semper vehicula purus.</p>
+                  <a href="https://github.com/rmrthb/rmrthb.github.io"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">rmrth.se</h3>
               </div>
-            </a>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="content">
-            <a href="https://github.com/rmrthb/rmrthb.github.io" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="media/image.jpg">
-              <div class="content-details fadeIn-top">
-                <h3>rmrth.se</h3>
-                <p>Projekt avsedd för att lära mig grundläggande webbprogrammering.</p>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-internship.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Internship</h3>
+                  <p class="content-text">During my internship project, the task my team and I were given was to build a complete solution for their startup project. The whole solution includes web development, mobile and desktop application development. Our primary focus right now is on the desktop application. The main technologies used for the client version is .NET and Windows Presentation Foundation (WPF). The server side, is built with NodeJS and Express.</p>
+                </div>
+                <h3 class="project-header">Internship</h3>
               </div>
-            </a>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="content">
-            <a href="https://github.com/rmrthb/rmrthb.github.io" target="_blank">
-              <div class="content-overlay"></div>
-              <img class="content-image" src="media/image.jpg">
-              <div class="content-details fadeIn-top">
-                <h3>rmrth.se</h3>
-                <p>Projekt avsedd för att lära mig grundläggande webbprogrammering.</p>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-holiday.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Holiday Maker</h3>
+                  <p class="content-text">The final project in the course "Ämnesövergripande projekt inom systemutveckling, fortsättning", a group assignment where we would create an application where users can search and book accommodations. The application is built in UWP and with the Model-View-ViewModel (MVVM) design pattern. The server application and the database are built with Entity Framework Core and ASP.NET Core.</p>
+                  <a href="https://github.com/rmrthb/HolidayMaker"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">Holiday Maker</h3>
               </div>
-            </a>
           </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-        <div class="hovereffect">
-          <img class="img-responsive" src="media/image.jpg" alt="">
-          <div class="overlay">
-            <h2>rmrth.se</h2>
-            <p>
-              <a>Projekt avsedd för att lära mig grundläggande
-                webbprogrammering.</a></br>
-                <a href="https://github.com/rmrthb/rmrthb.github.io">
-                  Länk till repo
-                </a>
-            </p>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-test.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Exam application</h3>
+                  <p class="content-text">The final project in the course "Ämnesövergripande projekt inom systemutveckling, grund", a group assignment where we would create an application where teachers can create exam for their students. The application is built in UWP and with the Model-View-ViewModel (MVVM) design pattern. The server application and the database are built with Entity Framework Core and ASP.NET Core.</p>
+                  <a href="https://github.com/rmrthb/Testverktyg"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">Exam application</h3>
+              </div>
           </div>
-        </div>
-      </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-pizza.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Pizza application</h3>
+                  <p class="content-text">The final project in the course "Object-oriented programming 2", an individual task where we would create a pizza ordering application, and apply new knowledge where we created a RESTful API and database using Entity Framework Core and ASP.NET Core. </p>
+                  <a href="https://github.com/rmrthb/Pizzapalatset"><button type="button" class="btn btn-light btn-sm">Client repo</button></a>
+                  <a href="https://github.com/rmrthb/PizzaServer"><button type="button" class="btn btn-light btn-sm">Server repo</button></a>
 
-
-      <!-- <div class="imgbox">
-        <img src="media/image.jpg" alt="Avatar" class="image" style="width:100%">
-        <div class="imgtext">
-          <div class="text">Projekt avsedd för att lära mig grundläggande webbprogrammering.</div>
-          <a href="https://github.com/rmrthb/rmrthb.github.io" class="btn btn-primary">Link to repo</a>
-        </div>
-      </div> -->
-
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://miro.medium.com/max/3200/0*jRxIWiW8UcZ4Pjeg.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">This website!</h5>
-              <p class="card-text">Project intended for learning HTML/CSS/JS/Bootstrap. </p>
-              <a href="https://github.com/rmrthb/rmrthb.github.io" class="btn btn-primary">Link to repo</a>
-            </div>
+                </div>
+                <h3 class="project-header">Pizza application</h3>
+              </div>
           </div>
-        </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-bank.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Bank application</h3>
+                  <p class="content-text">The final project in the course "Object-oriented programming 1", a group project where we were given the task of learning about the design principles around and how to build applications in Universal Windows Platform (UWP) and the architectural pattern Model-View-Controller (MVC). The project was to build a bank application.</p>
+                  <a href="https://github.com/rmrthb/BankApplication"><button type="button" class="btn btn-light btn-sm">GitHub server repo</button></a>
+                </div>
+                <h3 class="project-header">Bank application</h3>
+              </div>
+          </div>
 
       </div>
     </div>
@@ -184,18 +170,14 @@
   <!-- CONTACT SECTION-->
   <section class="topbot-padding" id="contact">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row">
-        <div class="col">
           <h1 data-aos="fade-right">
             contact
           </h1>
           <a>
             feel free to contact me!
           </a>
-        </div>
-      </div>
 
-      <div class="row" id="contacticons">
+      <!-- <div class="row" id="contacticons">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
           <a href="mailto:raymarth.borromeo@gmail.com">
             <img src="media/email-inv.svg" />
@@ -211,7 +193,20 @@
             <img src="media/github-inv.svg" />
           </a>
         </div>
-      </div>
+      </div> -->
+
+
+<div class="row" id="contacticons">
+      <a href="mailto:raymarth.borromeo@gmail.com">
+        <img src="media/email-inv.svg" />
+      </a>
+      <a href="https://www.linkedin.com/in/rayborromeo/">
+        <img src="media/linkedin-inv.svg" />
+      </a>
+      <a href="https://github.com/rmrthb">
+        <img src="media/github-inv.svg" />
+      </a>
+</div>
 
     </div>
   </section>
