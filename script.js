@@ -1,11 +1,20 @@
-var i = 0;
-var txt = 'rmrth';
-var speed = 200;
+let i = 0;
+let txt = 'Raymarth';
+let speed = 200;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typewrite").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+
+window.onload = function() {
+
+  AOS.init({
+    once: true,
+});
+  typeWriter();
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("typewrite").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
   }
 }

@@ -6,9 +6,12 @@
   <title>Raymarth Borromeo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -21,18 +24,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#home">HOME</a>
+        <ul class="nav navbar-nav">
+          <li class="nav-item" id="leftlogo">
+            <a class="nav-link disabled nav-left" href="#home">rmrth.se</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">ABOUT</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">PROJECTS</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">CONTACT</a>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -40,72 +46,251 @@
   </nav>
 
   <!-- HOME SECTION-->
-  <header class="topbot-padding" id="home">
-    <h1 id="typewrite"> </h1>
+  <header class="topbot-padding" id="home" data-aos="fade-up">
+
+<div class="container" id="header-content">
+    <h1 class="animate__animated animate__fadeInDown"><span id="section-headline">Hi, i'm</span></h1>
+    <div id="myname">
+      <h1><span class="typewrite anim-typewrite" id="typewrite"></span></h1>
+    </div>
+  </div>
+
+
+
   </header>
+  <!-- HOME SECTION-->
 
   <!-- ABOUT SECTION-->
   <section class="topbot-padding" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>
-            ABOUT
-          </h1>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2 data-aos="fade-right"><span id="section-headline">
+            About
+          </h2>
+        </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum vestibulum commodo. Nunc dui lacus, efficitur eget ornare nec, facilisis nec velit. Vivamus vel metus tempus, aliquet ipsum eget, rhoncus dui. Nam semper diam
-            eget
-            turpis convallis, vitae suscipit nulla dignissim. Maecenas lobortis mattis enim sed iaculis. Vivamus et lectus risus. Phasellus egestas pulvinar nibh, ac bibendum quam pellentesque at. Aliquam facilisis metus sed enim vulputate, nec
-            ullamcorper erat molestie. Nam tempus dolor ligula, non faucibus felis ultrices eget.
+            Hey there! I’m Ray. I am a solution-oriented developer student with a passion for impactful technology in society. I have had an interest in technology ever since childhood, and sitting glued in front of the computer screen before starting to lose my baby teeth was not something unusual.  That interest followed me all the way to the university, where it instead became my field of study.
           </p>
-        </div>
-      </div>
+          <p>
+            A few years later and with a lot more life experience, a move down to Malmö for the sake of love, and a background as an accountant under my belt, I have found my previous passion again. This time I chose to study a more practical education, where I also get the chance to learn what it is like to work within IT, with the help of internships.
+          </p>
+          <p>
+            Besides coding, I like to cook and eat food. Together with my girlfriend, our goal is to explore the unexplored in the world of food. I love to travel, and most recently I was in Asia in 2019 and backpacked for a two-month period to experience culture and above all to expose our taste buds to flavours that hit the right spot. Other than that, I like to spend time on casual multiplayer games or just lift scrap metal at the gym.
+          </p>
+          <p>
+            If you found something interesting about me, feel free to get in touch with me @raymarth.borromeo or click on one of the links below in the Contact section!
+          </p>
+
+<div  id="skills">
+          <h3 id="skills-header">Technical experiences</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Languages and frameworks</h4>
+              <ul>
+                <li>
+                  C#
+                </li>
+                <li>
+                  Java
+                </li>
+                <li>
+                  Python
+                </li>
+              </ul>
+              <ul>
+                <Li>
+                  .NET Framework
+                </Li>
+                <ul>
+                  <li>
+                    Windows Presentation Foundation
+                  </li>
+                  <li>
+                    Universal Windows Platform
+                  </li>
+                  <li>
+                    Entity Framework
+                  </li>
+                  <li>
+                    Xamarin
+                  </li>
+                  <li>
+                    ASP.NET
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Databases</h4>
+              <ul>
+                <li>
+                  SQL (MySQL, MS SQL, T-SQL)
+                </li>
+                <li>
+                  MS SQL Server
+                </li>
+                <li>
+                  Heidi SQL
+                </li>
+              </ul>
+              <h4>Web development</h4>
+              <ul>
+                <li>
+                  HTML
+                </li>
+                <li>
+                  CSS
+                </li>
+                <li>
+                  Javascript
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Version control</h4>
+              <ul>
+                <li>
+                  Git
+                </li>
+                <li>
+                  Git Bash
+                </li>
+                <li>
+                  GitHub
+                </li>
+                <li>
+                  Bitbucket
+                </li>
+              </ul>
+            </div>
+          </div>
+
+</div>
     </div>
+
+
   </section>
+  <!-- ABOUT SECTION-->
 
   <!-- PROJECTS SECTION-->
-
   <section class="topbot-padding" id="projects">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <h2 data-aos="fade-right">
+            <span id="section-headline">
+            Projects
+          </span>
+        </h2>
+
       <div class="row">
-        <div class="col">
-          <h1>
-            PROJECTS
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum vestibulum commodo. Nunc dui lacus, efficitur eget ornare nec, facilisis nec velit. Vivamus vel metus tempus, aliquet ipsum eget, rhoncus dui. Nam semper diam
-            eget turpis convallis, vitae suscipit nulla dignissim. Maecenas lobortis mattis enim sed iaculis. Vivamus et lectus risus. Phasellus egestas pulvinar nibh, ac bibendum quam pellentesque at. Aliquam facilisis metus sed enim vulputate, nec
-            ullamcorper erat molestie. Nam tempus dolor ligula, non faucibus felis ultrices eget.
-          </p>
-        </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-website.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">rmrth.se</h3>
+                  <p class="content-text">I created this website with the purpose to re-learn some basic web development and to showcase some of the projects I have created during the course of my studies.</p>
+                  <a href="https://github.com/rmrthb/rmrthb.github.io"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">rmrth.se</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-internship.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Internship</h3>
+                  <p class="content-text">During my internship project, the task my team and I were given was to build a complete solution for their startup project. The whole solution includes web development, mobile and desktop application development. Our primary focus right now is on the desktop application. The main technologies used for the client version is .NET and Windows Presentation Foundation (WPF). The server side, is built with NodeJS and Express.</p>
+                </div>
+                <h3 class="project-header">Internship</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-holiday.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Holiday Maker</h3>
+                  <p class="content-text">The final project in the course "Ämnesövergripande projekt inom systemutveckling, fortsättning", a group assignment where we would create an application where users can search and book accommodations. The application is built in UWP and with the Model-View-ViewModel (MVVM) design pattern. The server application and the database are built with Entity Framework Core and ASP.NET Core.</p>
+                  <a href="https://github.com/rmrthb/HolidayMaker"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">Holiday Maker</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-test.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Exam application</h3>
+                  <p class="content-text">The final project in the course "Ämnesövergripande projekt inom systemutveckling, grund", a group assignment where we would create an application where teachers can create exam for their students. The application is built in UWP and with the Model-View-ViewModel (MVVM) design pattern. The server application and the database are built with Entity Framework Core and ASP.NET Core.</p>
+                  <a href="https://github.com/rmrthb/Testverktyg"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
+                </div>
+                <h3 class="project-header">Exam application</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-pizza.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Pizza application</h3>
+                  <p class="content-text">The final project in the course "Object-oriented programming 2", an individual task where we would create a pizza ordering application, and apply new knowledge where we created a RESTful API and database using Entity Framework Core and ASP.NET Core. </p>
+                  <a href="https://github.com/rmrthb/Pizzapalatset"><button type="button" class="btn btn-light btn-sm">Client repo</button></a>
+                  <a href="https://github.com/rmrthb/PizzaServer"><button type="button" class="btn btn-light btn-sm">Server repo</button></a>
+
+                </div>
+                <h3 class="project-header">Pizza application</h3>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+            <div class="content">
+                <div class="content-overlay"></div> <img class="content-image" src="media/w-bank.svg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">Bank application</h3>
+                  <p class="content-text">The final project in the course "Object-oriented programming 1", a group project where we were given the task of learning about the design principles around and how to build applications in Universal Windows Platform (UWP) and the architectural pattern Model-View-Controller (MVC). The project was to build a bank application.</p>
+                  <a href="https://github.com/rmrthb/BankApplication"><button type="button" class="btn btn-light btn-sm">GitHub server repo</button></a>
+                </div>
+                <h3 class="project-header">Bank application</h3>
+              </div>
+          </div>
+
       </div>
     </div>
   </section>
+  <!-- PROJECTS SECTION-->
 
   <!-- CONTACT SECTION-->
-
   <section class="topbot-padding" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>
-            CONTACT
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum vestibulum commodo. Nunc dui lacus, efficitur eget ornare nec, facilisis nec velit. Vivamus vel metus tempus, aliquet ipsum eget, rhoncus dui. Nam semper diam
-            eget turpis convallis, vitae suscipit nulla dignissim. Maecenas lobortis mattis enim sed iaculis. Vivamus et lectus risus. Phasellus egestas pulvinar nibh, ac bibendum quam pellentesque at. Aliquam facilisis metus sed enim vulputate, nec
-            ullamcorper erat molestie. Nam tempus dolor ligula, non faucibus felis ultrices eget.
-          </p>
-        </div>
-      </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <h2 data-aos="fade-right">
+            <span id="section-headline">
+            Contact
+            </span>
+          </h2>
+          <a>
+            Feel free to contact me!
+          </a>
+
+<div id="contacticons">
+      <a href="mailto:raymarth.borromeo@gmail.com">
+        <img src="media/email-inv.svg" />
+      </a>
+      <a href="https://www.linkedin.com/in/rayborromeo/">
+        <img src="media/linkedin-inv.svg" />
+      </a>
+      <a href="https://github.com/rmrthb">
+        <img src="media/github-inv.svg" />
+      </a>
+</div>
+
     </div>
   </section>
+  <!-- CONTACT SECTION-->
 
-  <!-- Copyright -->
-  <footer class="footer-copyright">
+  <!-- COPYRIGHT SECTION -->
+  <footer class="footer-copyright" id="footer">
     <a>© 2020 Copyright: Raymarth Borromeo</a>
   </footer>
-  <!-- Copyright -->
+  <!-- COPYRIGHT SECTION -->
 
   <!-- End of body-->
   <script src="script.js">
