@@ -1,11 +1,13 @@
 let i = 0;
-let txt = 'raymarth';
+let txt = 'Raymarth';
 let speed = 200;
 
 
 window.onload = function() {
 
-  AOS.init();
+  AOS.init({
+    once: true,
+});
   typeWriter();
 
   function typeWriter() {

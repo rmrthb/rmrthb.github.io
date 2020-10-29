@@ -29,16 +29,16 @@
             <a class="nav-link disabled nav-left" href="#home">rmrth.se</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#home">home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">about</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -47,24 +47,13 @@
 
   <!-- HOME SECTION-->
   <header class="topbot-padding" id="home" data-aos="fade-up">
-      <!-- <div class="col">
-        <img src="media/ellipse.svg" />
-      </div>
-      <div class="col">
-        <h1 class="animate__animated animate__fadeInDown" id="welcome">hi, i'm</h1>
-        <p class="content" id="myname">
-          <span class="typewrite anim-typewrite"></span>
-        </p>
-      </div> -->
-<div class="container">
-  <img src="media/ellipse.svg" id="ellipse"/>
-  <div class="centered">
-    <h1 class="animate__animated animate__fadeInDown" id="welcome">hi, i'm</h1>
-    <p class="content" id="myname">
-      <span class="typewrite anim-typewrite" id="typewrite"></span>
-    </p>
+
+<div class="container" id="header-content">
+    <h1 class="animate__animated animate__fadeInDown"><span id="section-headline">Hi, i'm</span></h1>
+    <div id="myname">
+      <h1><span class="typewrite anim-typewrite" id="typewrite"></span></h1>
+    </div>
   </div>
-</div>
 
 
 
@@ -74,14 +63,114 @@
   <!-- ABOUT SECTION-->
   <section class="topbot-padding" id="about">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h1 data-aos="fade-right">
-            about
-          </h1>
+          <h2 data-aos="fade-right"><span id="section-headline">
+            About
+          </h2>
+        </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum vestibulum commodo. Nunc dui lacus, efficitur eget ornare nec, facilisis nec velit. Vivamus vel metus tempus, aliquet ipsum eget, rhoncus dui. Nam semper diam
-            eget turpis convallis, vitae suscipit nulla dignissim.
+            Hey there! I’m Ray. I am a solution-oriented developer student with a passion for impactful technology in society. I have had an interest in technology ever since childhood, and sitting glued in front of the computer screen before starting to lose my baby teeth was not something unusual.  That interest followed me all the way to the university, where it instead became my field of study.
           </p>
+          <p>
+            A few years later and with a lot more life experience, a move down to Malmö for the sake of love, and a background as an accountant under my belt, I have found my previous passion again. This time I chose to study a more practical education, where I also get the chance to learn what it is like to work within IT, with the help of internships.
+          </p>
+          <p>
+            Besides coding, I like to cook and eat food. Together with my girlfriend, our goal is to explore the unexplored in the world of food. I love to travel, and most recently I was in Asia in 2019 and backpacked for a two-month period to experience culture and above all to expose our taste buds to flavours that hit the right spot. Other than that, I like to spend time on casual multiplayer games or just lift scrap metal at the gym.
+          </p>
+          <p>
+            If you found something interesting about me, feel free to get in touch with me @raymarth.borromeo or click on one of the links below in the Contact section!
+          </p>
+
+<div  id="skills">
+          <h3 id="skills-header">Technical experiences</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Languages and frameworks</h4>
+              <ul>
+                <li>
+                  C#
+                </li>
+                <li>
+                  Java
+                </li>
+                <li>
+                  Python
+                </li>
+              </ul>
+              <ul>
+                <Li>
+                  .NET Framework
+                </Li>
+                <ul>
+                  <li>
+                    Windows Presentation Foundation
+                  </li>
+                  <li>
+                    Universal Windows Platform
+                  </li>
+                  <li>
+                    Entity Framework
+                  </li>
+                  <li>
+                    Xamarin
+                  </li>
+                  <li>
+                    ASP.NET
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Databases</h4>
+              <ul>
+                <li>
+                  SQL (MySQL, MS SQL, T-SQL)
+                </li>
+                <li>
+                  MS SQL Server
+                </li>
+                <li>
+                  Heidi SQL
+                </li>
+              </ul>
+              <h4>Web development</h4>
+              <ul>
+                <li>
+                  HTML
+                </li>
+                <li>
+                  CSS
+                </li>
+                <li>
+                  Javascript
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+              <h4>Version control</h4>
+              <ul>
+                <li>
+                  Git
+                </li>
+                <li>
+                  Git Bash
+                </li>
+                <li>
+                  GitHub
+                </li>
+                <li>
+                  Bitbucket
+                </li>
+              </ul>
+            </div>
+          </div>
+
+</div>
     </div>
+
+
   </section>
   <!-- ABOUT SECTION-->
 
@@ -89,9 +178,11 @@
   <section class="topbot-padding" id="projects">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <h1 data-aos="fade-right">
-            projects
-          </h1>
+          <h2 data-aos="fade-right">
+            <span id="section-headline">
+            Projects
+          </span>
+        </h2>
 
       <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
@@ -99,7 +190,7 @@
                 <div class="content-overlay"></div> <img class="content-image" src="media/w-website.svg">
                 <div class="content-details fadeIn-bottom">
                   <h3 class="content-title">rmrth.se</h3>
-                  <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat fermentum malesuada. Vivamus mauris eros, cursus at facilisis sit amet, molestie vel neque. Curabitur turpis ante, venenatis id metus vel, semper vehicula purus.</p>
+                  <p class="content-text">I created this website with the purpose to re-learn some basic web development and to showcase some of the projects I have created during the course of my studies.</p>
                   <a href="https://github.com/rmrthb/rmrthb.github.io"><button type="button" class="btn btn-light btn-sm">GitHub repo</button></a>
                 </div>
                 <h3 class="project-header">rmrth.se</h3>
@@ -170,33 +261,16 @@
   <!-- CONTACT SECTION-->
   <section class="topbot-padding" id="contact">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <h1 data-aos="fade-right">
-            contact
-          </h1>
+          <h2 data-aos="fade-right">
+            <span id="section-headline">
+            Contact
+            </span>
+          </h2>
           <a>
-            feel free to contact me!
+            Feel free to contact me!
           </a>
 
-      <!-- <div class="row" id="contacticons">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="mailto:raymarth.borromeo@gmail.com">
-            <img src="media/email-inv.svg" />
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="https://www.linkedin.com/in/rayborromeo/">
-            <img src="media/linkedin-inv.svg" />
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-          <a href="https://github.com/rmrthb">
-            <img src="media/github-inv.svg" />
-          </a>
-        </div>
-      </div> -->
-
-
-<div class="row" id="contacticons">
+<div id="contacticons">
       <a href="mailto:raymarth.borromeo@gmail.com">
         <img src="media/email-inv.svg" />
       </a>
