@@ -3,11 +3,11 @@ let txt = 'Raymarth';
 let speed = 200;
 
 
-window.onload = function() {
+window.onload = function () {
 
   AOS.init({
     once: true,
-});
+  });
   typeWriter();
 
   function typeWriter() {
