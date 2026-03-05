@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokémon Silhouette Guessing Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Pokémon Silhouette Guessing Game</h1>
+        <div id="generation-selector">
+            <h2>Select Generation</h2>
+            <button class="gen-button" data-gen="1">Gen I</button>
+            <button class="gen-button" data-gen="2">Gen II</button>
+            <button class="gen-button" data-gen="3">Gen III</button>
+            <button class="gen-button" data-gen="4">Gen IV</button>
+            <button class="gen-button" data-gen="5">Gen V</button>
+            <button class="gen-button" data-gen="6">Gen VI</button>
+            <button class="gen-button" data-gen="7">Gen VII</button>
+            <button class="gen-button" data-gen="8">Gen VIII</button>
+            <button class="gen-button" data-gen="9">Gen IX</button>
+            <button class="gen-button" data-gen="all">All</button>
+        </div>
+        <div id="game-screen" class="hidden">
+            <h2>Guess the Pokémon!</h2>
+            <div id="silhouette-container">
+                <img id="pokemon-silhouette" src="" alt="Pokémon Silhouette">
+            </div>
+            <button id="play-cry">Play Cry</button>
+            <div id="guess-indicators"></div>
+            <input type="text" id="guess-input" placeholder="Enter your guess">
+            <button id="submit-guess">Submit Guess</button>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2 id="result-message"></h2>
+            <img id="pokemon-artwork" src="" alt="Pokémon Artwork">
+            <div id="pokemon-stats"></div>
+            <button id="new-pokemon">New Pokémon</button>
+            <button id="change-generation">Change Generation</button>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>
