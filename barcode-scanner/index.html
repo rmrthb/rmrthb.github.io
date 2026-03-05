@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Scanner</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Barcode Scanner</h1>
+        </header>
+
+        <main>
+            <!-- Scanner Section -->
+            <div id="scanner-section">
+                <div id="reader"></div>
+                <button id="start-btn" class="btn btn-primary">Start Scan</button>
+                <button id="stop-btn" class="btn btn-secondary" style="display: none;">Stop Scan</button>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Fetching product info...</p>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results" class="hidden">
+                <h2>Product Info</h2>
+                <div class="product-card">
+                    <img id="product-image" src="" alt="Product Image" class="hidden">
+                    <div class="product-details">
+                        <p><strong>📦 Name:</strong> <span id="product-name">-</span></p>
+                        <p><strong>⚖️ Weight:</strong> <span id="product-weight">-</span></p>
+                        <p><strong>🏷️ Brand:</strong> <span id="product-brand">-</span></p>
+                        <p><strong>🔢 Barcode:</strong> <span id="product-barcode">-</span></p>
+                        <p><strong>📝 Ingredients:</strong> <span id="product-ingredients">-</span></p>
+                    </div>
+                </div>
+                <button id="scan-another-btn" class="btn btn-primary">Scan Another</button>
+            </div>
+
+            <!-- Error Section -->
+            <div id="error" class="hidden">
+                <p id="error-message">Something went wrong</p>
+                <button id="retry-btn" class="btn btn-primary">Try Again</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- html5-qrcode library via CDN -->
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/scanner.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
