@@ -1,0 +1,121 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #cccccc;
+  --card-bg: #f9f9f9;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #555555;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  text-transform: lowercase; 
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container { max-width: 600px; margin: 0 auto; }
+
+.add-movie-section {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: var(--card-bg);
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label { margin-bottom: 5px; font-weight: bold; }
+
+input, textarea {
+  padding: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  text-transform: lowercase;
+}
+
+.short-input { width: 80px; }
+.mb-30 { margin-bottom: 30px; }
+.hidden { display: none !important; }
+
+button {
+  padding: 8px 12px;
+  text-transform: lowercase;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  border: none;
+  margin-right: 10px;
+}
+
+ul { list-style-type: none; padding: 0; }
+
+li {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: var(--card-bg);
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.movie-comment { margin-bottom: 15px; font-style: italic; }
+.movie-date { font-size: 0.8em; color: gray; }
+.action-btns button { font-size: 0.8em; padding: 5px 8px; }
+
+/* --- TAB STYLING --- */
+.tab-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tab-btn {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  opacity: 0.5;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.tab-btn:hover {
+  opacity: 0.8;
+}
+
+.tab-btn.active {
+  opacity: 1;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-weight: bold;
+}
+
+/* --- RATING COLORS --- */
+.rating-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #121212; /* keeps the text dark for readability against the colors */
+}
+
+.rating-high { background-color: #81c784; }   /* soft green */
+.rating-medium { background-color: #ffd54f; } /* soft yellow */
+.rating-low { background-color: #e57373; }    /* soft red */
