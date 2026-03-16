@@ -2,7 +2,7 @@ name: Deploy Vanilla JS to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 permissions:
   contents: read
