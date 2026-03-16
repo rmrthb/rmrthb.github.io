@@ -19,10 +19,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Inject Secrets into app.js
+      - name: Inject Secrets into watchlist/app.js
         run: |
-          sed -i "s|INJECT_API_KEY_HERE|${{ secrets.API_KEY }}|g" app.js
-          sed -i "s|INJECT_GAS_URL_HERE|${{ secrets.GAS_URL }}|g" app.js
+          sed -i "s|INJECT_API_KEY_HERE|${{ secrets.API_KEY }}|g" watchlist/app.js
+          sed -i "s|INJECT_GAS_URL_HERE|${{ secrets.GAS_URL }}|g" watchlist/app.js
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
